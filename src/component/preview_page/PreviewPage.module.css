@@ -1,0 +1,64 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header {
+    background: white;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+    margin-left: 10px;
+}
+
+.phone {
+    font-size: 14px;
+    margin: 0 15px;
+}
+
+/* Định dạng Facebook */
+.facebook {
+    display: flex;
+    align-items: center;
+}
+
+.facebook a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: bold; /* Làm chữ in đậm */
+}
+
+.fbIcon {
+    width: 20px;
+    height: auto;
+    margin-right: 5px;
+}
+
+.selectButton, .backButton {
+    background: #f39c12;
+    border: none;
+    padding: 8px 15px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+.iframe {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    border: none;
+}

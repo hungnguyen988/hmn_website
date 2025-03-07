@@ -1,0 +1,75 @@
+.container {
+    background: white;
+    position: relative;
+    overflow: hidden;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.container::before,
+.container::after {
+    content: '';
+    position: absolute;
+    background: rgba(22, 106, 214, 0.3); /* Xanh lá cây nhạt */
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.container::before {
+    width: 300px;
+    height: 300px;
+    top: -100px;
+    left: -100px;
+}
+
+.container::after {
+    width: 200px;
+    height: 200px;
+    bottom: -50px;
+    right: -50px;
+}
+
+.mainTitle {
+    color: #0c4acd;
+    margin-bottom: 5px;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+    margin-top : 50px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+    color: #0c4acd;
+    font-size: 50px;
+}
+
+.cardTitle {
+    color: #0c4acd;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.cardDescription {
+    color: #757575;
+    font-size: 0.9em;
+}

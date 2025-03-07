@@ -1,0 +1,75 @@
+.footer {
+    margin-top: 50px;
+    padding: 30px;
+    background: linear-gradient(135deg, #83b5ea, #acc4dd); /* Gradient nổi bật */
+    color: white;
+    text-align: center;
+    /*border-radius: 10px;*/
+    box-shadow: 0 0 15px rgba(255, 126, 95, 0.5);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.footer h3 {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.footer p {
+    font-size: 18px;
+    margin: 8px 0;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.footer a:hover {
+    color: #ffd700;
+    text-decoration: underline;
+}
+
+/* Icons */
+.contactIcon {
+    margin-right: 10px;
+    font-size: 22px;
+    color: #ffd700; /* Vàng nổi bật */
+}
+
+/* Social Media Icons */
+.socialIcons {
+    margin-top: 15px;
+}
+
+.socialIcon {
+    font-size: 28px;
+    margin: 0 12px;
+    color: white;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.socialIcon:hover {
+    color: #ffd700;
+    transform: scale(1.2);
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
