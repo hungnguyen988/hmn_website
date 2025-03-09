@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/hmn_website/static/css/main.bd31994c.css",
-    "main.js": "/hmn_website/static/js/main.72c8b980.js",
+    "main.css": "/hmn_website/static/css/main.926af79e.css",
+    "main.js": "/hmn_website/static/js/main.6ceb3b75.js",
     "static/js/488.9c92ff38.chunk.js": "/hmn_website/static/js/488.9c92ff38.chunk.js",
     "static/media/logo.svg": "/hmn_website/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/hmn_website/index.html",
-    "main.bd31994c.css.map": "/hmn_website/static/css/main.bd31994c.css.map",
-    "main.72c8b980.js.map": "/hmn_website/static/js/main.72c8b980.js.map",
+    "main.926af79e.css.map": "/hmn_website/static/css/main.926af79e.css.map",
+    "main.6ceb3b75.js.map": "/hmn_website/static/js/main.6ceb3b75.js.map",
     "488.9c92ff38.chunk.js.map": "/hmn_website/static/js/488.9c92ff38.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bd31994c.css",
-    "static/js/main.72c8b980.js"
+    "static/css/main.926af79e.css",
+    "static/js/main.6ceb3b75.js"
   ]
 }
