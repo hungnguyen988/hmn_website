@@ -24,6 +24,7 @@
     margin: 20px 0;
 }
 
+/* ---- Service Section ---- */
 .service {
     display: flex;
     justify-content: center;
@@ -35,7 +36,7 @@
     background: rgba(255, 255, 255, 0.1);
     padding: 20px;
     border-radius: 10px;
-    width: 200px;
+    width: 220px; /* Điều chỉnh kích thước */
     height: 350px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -48,15 +49,15 @@
 }
 
 .icon {
-    font-size: 80px;
+    font-size: 60px;
     color: #ffeb3b;
     margin-bottom: 10px;
 }
 
 .title {
-    font-size: 1.5em;
+    font-size: 1.4em;
     font-weight: bold;
-    color: white;
+    color: #ffeb3b;
     margin: 10px 0;
 }
 
@@ -64,4 +65,83 @@
     color: #cfd8dc;
     line-height: 1.5;
     font-size: 0.95em;
+}
+
+/* ---- Responsive ---- */
+@media screen and (max-width: 1024px) {
+    .introduce h2 {
+        font-size: 2em;
+    }
+    .introduce p {
+        font-size: 1em;
+    }
+    .card {
+        width: 180px;
+        height: auto;
+        padding: 15px;
+    }
+    .icon {
+        font-size: 50px;
+    }
+    .title {
+        font-size: 1.2em;
+    }
+    .description {
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 30px 15px;
+    }
+    .introduce {
+        padding-bottom: 20px;
+    }
+    .introduce h2 {
+        font-size: 1.8em;
+    }
+    .introduce p {
+        font-size: 0.9em;
+    }
+    .service {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: 90%;
+        max-width: 300px;
+        height: auto;
+    }
+    .icon {
+        font-size: 40px;
+    }
+    .title {
+        font-size: 1.1em;
+    }
+    .description {
+        font-size: 0.85em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .introduce h2 {
+        font-size: 1.5em;
+    }
+    .introduce p {
+        font-size: 0.8em;
+    }
+    .card {
+        width: 100%;
+        padding: 10px;
+    }
+    .icon {
+        font-size: 35px;
+    }
+    .title {
+        font-size: 1em;
+    }
+    .description {
+        font-size: 0.8em;
+    }
 }

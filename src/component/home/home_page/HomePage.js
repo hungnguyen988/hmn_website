@@ -10,9 +10,9 @@ const HomePage = () => {
         <div>
             <Banner/>
             <Describe/>
+            <ProductsComponent/>
             <ExplanationSection/>
             <ServicePage/>
-            <ProductsComponent/>
         </div>
     );
 }

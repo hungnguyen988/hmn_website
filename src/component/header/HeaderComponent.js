@@ -1,41 +1,78 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min";
 import styles from "./HeaderComponent.module.css";
-import { FaPhoneAlt, FaMapMarkerAlt } from "react-icons/fa"; // Import icon từ react-icons
 
 const HeaderComponent = () => {
+    const location = useLocation();
+    const [sidebarOpen, setSidebarOpen] = useState(false);
+
+    // Toggle sidebar
+    const toggleSidebar = () => {
+        setSidebarOpen(!sidebarOpen);
+    };
+
     return (
-        <header className={styles.header}>
+        <header className={`${styles.header} fixed-top bg-light shadow`}>
+            <nav className="navbar navbar-expand-lg navbar-light bg-light">
+                <div className="container">
+                    {/* Logo */}
+                    <Link className="navbar-brand" to="/">
+                        <img src={`${process.env.PUBLIC_URL}/logo.png`} alt="Logo" className={styles.logo} />
+                    </Link>
 
-            {/* Logo và menu */}
-            <div className={styles.navContainer}>
-                <img src="/logo.png" alt="Logo" className={styles.logo}/>
-                <nav>
-                    <ul className={styles.nav}>
-                        <li className={styles.navItem}>
-                            <Link to="/" className={styles.navLink}>TRANG CHỦ</Link>
-                        </li>
-                        <li className={styles.navItem}>
-                            <a href="/products" className={styles.navLink}>MẪU THIẾT KẾ</a>
-                        </li>
-                        <li className={styles.navItem}>
-                            <Link to={`/service`} className={styles.navLink} >GÓI DỊCH VỤ</Link>
-                        </li>
-                        <li className={styles.navItem}>
-                            <Link to={`/introduce`} className={styles.navLink} >GIỚI THIỆU</Link>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
+                    {/* Nút menu cho mobile */}
+                    <button className="navbar-toggler" type="button" onClick={toggleSidebar}>
+                        <span className="navbar-toggler-icon"></span>
+                    </button>
 
-            {/* Thanh trên cùng hiển thị thông tin liên hệ */}
-            <div className={styles.topBar}>
-                <div className={styles.contactInfo}>
-                    {/*<span><FaMapMarkerAlt /> Địa chỉ: thôn Nam Tiến, xã Kỳ Bắc, huyện Kỳ Anh, tỉnh Hà Tĩnh</span>*/}
-                    {/*<span><FaPhoneAlt /> Hotline: 0963 110 912</span>*/}
+                    {/* Navbar bình thường trên desktop */}
+                    <div className="collapse navbar-collapse d-none d-lg-block" id="navbarNav">
+                        <ul className={`navbar-nav mx-auto ${styles.navbarNav}`}>
+                            <li className="nav-item">
+                                <Link to="/" className={`nav-link ${location.pathname === "/" ? "active" : ""}`}>TRANG
+                                    CHỦ</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link to="/products"
+                                      className={`nav-link ${location.pathname === "/products" ? "active" : ""}`}>MẪU
+                                    THIẾT KẾ</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link to="/service"
+                                      className={`nav-link ${location.pathname === "/service" ? "active" : ""}`}>GÓI
+                                    DỊCH VỤ</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link to="/introduce"
+                                      className={`nav-link ${location.pathname === "/introduce" ? "active" : ""}`}>GIỚI
+                                    THIỆU</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link to="/contact"
+                                      className={`nav-link ${location.pathname === "/contact" ? "active" : ""}`}>LIÊN HỆ
+                                    </Link>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+            </nav>
+
+            {/* Sidebar trên mobile */}
+            <div className={`${styles.sidebar} ${sidebarOpen ? styles.show : ""}`}>
+            <button className={styles.closeBtn} onClick={toggleSidebar}>&times;</button>
+                <ul className="list-unstyled">
+                    <li><Link to="/" onClick={toggleSidebar} className={location.pathname === "/" ? styles.active : ""}>TRANG CHỦ</Link></li>
+                    <li><Link to="/products" onClick={toggleSidebar} className={location.pathname === "/products" ? styles.active : ""}>MẪU THIẾT KẾ</Link></li>
+                    <li><Link to="/service" onClick={toggleSidebar} className={location.pathname === "/service" ? styles.active : ""}>GÓI DỊCH VỤ</Link></li>
+                    <li><Link to="/introduce" onClick={toggleSidebar} className={location.pathname === "/introduce" ? styles.active : ""}>GIỚI THIỆU</Link></li>
+                    <li><Link to="/contact" onClick={toggleSidebar} className={location.pathname === "/contact" ? styles.active : ""}>LIÊN HỆ</Link></li>
+                </ul>
             </div>
 
+            {/* Overlay khi mở sidebar */}
+            {sidebarOpen && <div className={styles.overlay} onClick={toggleSidebar}></div>}
         </header>
     );
 };

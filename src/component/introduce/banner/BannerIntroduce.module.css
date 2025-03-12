@@ -1,0 +1,33 @@
+.banner {
+    width: 100%;
+    max-height: 600px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 20px 0;
+}
+
+.banner img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .banner {
+        padding: 10px 0;
+    }
+    .banner img {
+        max-height: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner img {
+        max-height: 200px;
+    }
+}

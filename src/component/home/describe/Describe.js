@@ -46,7 +46,7 @@ const Describe = () => {
                 <div className={style.introduce}>
                     <p>Thiết kế website hiện đại- Tương thích Mobile - Tối ưu SEO</p>
                     <h2>THIẾT KẾ WEBSITE UY TÍN HÀNG ĐẦU TẠI ĐÀ NẴNG</h2>
-                    <p>Mang trong mình sứ mệnh nâng tầm thương hiệu lên tầm cao mới trong thười đại công nghệ số. HƯNG THỊNH đã , đang và sẽ tạo ra những trang web sinh động, ứng dụng hiện đại góp phần giúp doanh nghiệp tiếp cận với nguồn khách hàng lớn hơn, đem lại doanh thu vượt trội cho doanh nghiệp. Chúng tôi cung cấp doanh nghiệp các dịch vụ thiết kế website, cung cấp hostingvà các giải pháp marketing toàn diện như SEO, thương mại điện tử, quản trị website, nhận diện thương hiệu   </p>
+                    <p>Mang trong mình sứ mệnh nâng tầm thương hiệu lên tầm cao mới trong thời đại công nghệ số. HMN Website Design đã , đang và sẽ tạo ra những trang web sinh động, ứng dụng hiện đại góp phần giúp doanh nghiệp tiếp cận với nguồn khách hàng lớn hơn, đem lại doanh thu vượt trội cho doanh nghiệp. Chúng tôi cung cấp doanh nghiệp các dịch vụ thiết kế website, cung cấp hostingvà các giải pháp marketing toàn diện như SEO, thương mại điện tử, quản trị website, nhận diện thương hiệu   </p>
                 </div>
                 <div className={style.service}>
                     <Grid container justifyContent="center" spacing={4}>

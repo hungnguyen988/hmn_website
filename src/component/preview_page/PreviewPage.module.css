@@ -4,28 +4,44 @@
     height: 100vh;
 }
 
+/* HEADER */
 .header {
     background: white;
     color: black;
-    padding: 10px;
+    /*padding: 10px;*/
     text-align: center;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap; /* Đảm bảo không bị tràn */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Giữ header trên cùng */
+    transition: all 0.3s ease;
 }
 
+.header h2 {
+    margin-right: 30px; /* Điều chỉnh khoảng cách theo ý muốn */
+
+}
+
+
+/* LOGO */
 .logo {
     width: 80px;
     height: auto;
     margin-left: 10px;
 }
 
+/* SỐ ĐIỆN THOẠI */
 .phone {
     font-size: 14px;
     margin: 0 15px;
 }
 
-/* Định dạng Facebook */
+/* FACEBOOK */
 .facebook {
     display: flex;
     align-items: center;
@@ -37,7 +53,7 @@
     text-decoration: none;
     color: black;
     font-size: 14px;
-    font-weight: bold; /* Làm chữ in đậm */
+    font-weight: bold;
 }
 
 .fbIcon {
@@ -46,6 +62,7 @@
     margin-right: 5px;
 }
 
+/* BUTTON */
 .selectButton, .backButton {
     background: #f39c12;
     border: none;
@@ -54,11 +71,185 @@
     cursor: pointer;
     border-radius: 5px;
     margin: 0 5px;
+    transition: 0.3s ease;
 }
 
+.selectButton:hover, .backButton:hover {
+    background: #e67e22;
+}
+
+/* IFRAME (Nội dung bên dưới header) */
 .iframe {
     flex: 1;
     width: 100%;
     height: 100%;
     border: none;
+    padding-top: 150px; /* Đẩy nội dung xuống để không bị header che mất */
 }
+
+/* 🌟 RESPONSIVE */
+
+/* 📱 Màn hình nhỏ hơn 1024px (Tablet & Mobile) */
+@media (max-width: 1024px) {
+    .header {
+        padding: 10px;
+    }
+
+    .logo {
+        width: 70px;
+    }
+
+    .phone {
+        font-size: 13px;
+    }
+
+    .selectButton, .backButton {
+        padding: 10px;
+    }
+}
+
+/* 📱 Màn hình nhỏ hơn 768px (Mobile) */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        padding: 8px 0;
+        height: auto; /* Giảm chiều cao để không chiếm hết màn hình */
+    }
+
+    .logo {
+        width: 60px;
+    }
+
+    .phone {
+        font-size: 12px;
+        margin: 5px 0;
+    }
+
+    .facebook {
+        margin: 5px 0;
+    }
+
+    .selectButton, .backButton {
+        width: 100%;
+        max-width: 250px;
+        margin-top: 5px;
+    }
+
+    .iframe {
+        padding-top: 80px; /* Đảm bảo nội dung không bị che mất */
+    }
+}
+
+/* 📱 Màn hình rất nhỏ (< 480px) */
+@media (max-width: 480px) {
+    .header {
+        padding: 5px 0;
+    }
+
+    .logo {
+        width: 50px;
+    }
+
+    .phone {
+        font-size: 11px;
+    }
+
+    .facebook a {
+        font-size: 12px;
+    }
+
+    .selectButton, .backButton {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .iframe {
+        padding-top: 80px;
+    }
+}
+
+/* Container tổng */
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 300px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: fixed;
+    left: -100%;
+    top: 0;
+    height: 100%;
+    z-index: 1000;
+    transition: left 0.3s ease-in-out;
+}
+
+.sidebar.show {
+    left: 0;
+}
+
+/* Overlay khi mở sidebar */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+/* Nút menu mở sidebar */
+.menuButton {
+    height: 10px;
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+@media (max-width: 768px) {
+    .menuButton {
+        display: block;
+    }
+}
+
+/* Nút đóng sidebar */
+.closeBtn {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* Logo */
+.logo {
+    width: 150px;
+    margin: 0 auto;
+}
+
+/* Nội dung trang web */
+.iframe {
+    flex-grow: 1;
+    width: 100%;
+    height: 100vh;
+    border: none;
+}
+

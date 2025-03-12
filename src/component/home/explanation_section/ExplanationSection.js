@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Typography, Grid } from '@mui/material';
-import {BarChart, Build, Security, SupportAgent} from '@mui/icons-material';
+import {BarChart, Security, SupportAgent} from '@mui/icons-material';
 import style from './ExplanationSection.module.css';
 
 

@@ -37,7 +37,7 @@ const ProductsComponent = () => {
 
     return (
         <div className={styles.container}>
-            <h2 className={styles.title}>Danh sách mẫu</h2>
+            <h1 className={styles.mainTitle}>DANH SÁCH MẪU THIẾT KẾ</h1>
             {/* Nếu chưa chọn danh mục, hiển thị danh mục */}
             {!selectedCategory ? (
                 <div className={styles.grid}>

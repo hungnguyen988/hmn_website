@@ -40,14 +40,14 @@
 }
 
 .footerSection ul li a {
-    color: #333333;
+    color: white;
     text-decoration: none;
     font-size: 16px;
     transition: color 0.3s ease;
 }
 
 .footerSection ul li a:hover {
-    color: #ff0734;
+    color: blue;
 }
 
 /* Mạng xã hội */

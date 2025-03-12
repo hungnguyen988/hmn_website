@@ -1,0 +1,208 @@
+/* Tổng quan về container */
+.container {
+    background: linear-gradient(to bottom, #f8f9fa, #e9ecef);
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Khung nội dung */
+.content {
+    max-width: 950px;
+    background: #ffffff;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Tiêu đề */
+.title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+/* Hiệu ứng gạch chân cho tiêu đề */
+.title::after {
+    content: '';
+    width: 60px;
+    height: 4px;
+    background-color: #007bff;
+    display: block;
+    margin: 8px auto 0;
+    border-radius: 2px;
+}
+
+/* Nội dung văn bản */
+.text {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 25px;
+}
+
+/* Các icon mô tả */
+.icon-section {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.icon-box {
+    background: #007bff;
+    color: white;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.icon-box:hover {
+    transform: scale(1.1);
+}
+
+/* Nút liên hệ */
+.contact-button {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 16px 32px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+    margin-top: 30px;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+}
+
+.contact-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Hiệu ứng xuất hiện */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .content {
+        padding: 30px;
+        max-width: 95%;
+    }
+    .title {
+        font-size: 28px;
+    }
+    .text {
+        font-size: 16px;
+    }
+    .icon-box {
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+    }
+    .contact-button {
+        font-size: 16px;
+        padding: 14px 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 24px;
+    }
+    .text {
+        font-size: 14px;
+    }
+    .content {
+        padding: 20px;
+    }
+    .contact-button {
+        font-size: 14px;
+        padding: 12px 24px;
+    }
+}
+
+/* Button Group */
+.buttonProducts,
+.buttonContact {
+    display: inline-block;
+    padding: 14px 32px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    margin: 20px 10px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Nút Xem Mẫu */
+.buttonProducts {
+    background-color: #28a745;
+    color: white;
+}
+
+.buttonProducts:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(40, 167, 69, 0.3);
+}
+
+/* Nút Liên Hệ */
+.buttonContact {
+    background-color: #007bff;
+    color: white;
+}
+
+.buttonContact:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 123, 255, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .buttonProducts, .buttonContact {
+        font-size: 16px;
+        padding: 12px 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .buttonProducts, .buttonContact {
+        font-size: 14px;
+        padding: 10px 24px;
+    }
+}
+

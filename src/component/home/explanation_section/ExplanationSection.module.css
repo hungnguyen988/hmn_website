@@ -1,5 +1,5 @@
 .container {
-    background: white;
+    background: #e1dcdc;
     position: relative;
     overflow: hidden;
     padding: 50px 20px;
@@ -60,7 +60,7 @@
 
 .icon {
     color: #0c4acd;
-    font-size: 50px;
+    font-size: 30px;
 }
 
 .cardTitle {
@@ -72,4 +72,72 @@
 .cardDescription {
     color: #757575;
     font-size: 0.9em;
+}
+
+
+/* CSS gốc vẫn giữ nguyên */
+
+/* Responsive cho màn hình nhỏ (dưới 768px - mobile) */
+@media (max-width: 768px) {
+    .container {
+        padding: 30px 10px;
+    }
+
+    .container::before {
+        width: 250px;
+        height: 300px;
+        top: -50px;
+        left: -50px;
+    }
+
+    .container::after {
+        width: 250px;
+        height: 150px;
+        bottom: -30px;
+        right: -30px;
+    }
+
+    .card {
+        width:80%;
+        height: auto;
+        padding: 15px;
+        margin-top: 10px;
+        margin-left:50px;
+        justify-content: center;
+    }
+
+    .icon {
+        font-size: 30px; /* Tăng kích thước icon cho mobile */
+    }
+
+    .cardTitle {
+        font-size: 1.2em;
+    }
+
+    .cardDescription {
+        font-size: 0.85em;
+    }
+}
+
+/* Responsive cho màn hình rất nhỏ (dưới 480px - điện thoại nhỏ) */
+@media (max-width: 480px) {
+    .container {
+        padding: 20px 5px;
+    }
+
+    .mainTitle {
+        font-size: 1.5em;
+    }
+
+    .icon {
+        font-size: 30px; /* Icon lớn hơn để dễ nhìn */
+    }
+
+    .cardTitle {
+        font-size: 1.1em;
+    }
+
+    .cardDescription {
+        font-size: 0.8em;
+    }
 }
