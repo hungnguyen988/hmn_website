@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/hmn_website/static/css/main.702930fa.css",
-    "main.js": "/hmn_website/static/js/main.b0f6e5e8.js",
+    "main.js": "/hmn_website/static/js/main.cd9ac7ca.js",
     "static/js/488.9c92ff38.chunk.js": "/hmn_website/static/js/488.9c92ff38.chunk.js",
     "static/media/logo.svg": "/hmn_website/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/hmn_website/index.html",
     "main.702930fa.css.map": "/hmn_website/static/css/main.702930fa.css.map",
-    "main.b0f6e5e8.js.map": "/hmn_website/static/js/main.b0f6e5e8.js.map",
+    "main.cd9ac7ca.js.map": "/hmn_website/static/js/main.cd9ac7ca.js.map",
     "488.9c92ff38.chunk.js.map": "/hmn_website/static/js/488.9c92ff38.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.702930fa.css",
-    "static/js/main.b0f6e5e8.js"
+    "static/js/main.cd9ac7ca.js"
   ]
 }
