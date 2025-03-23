@@ -7,11 +7,10 @@ import IntroduceComponent from "./component/introduce/introduce_home/IntroduceCo
 import PreviewPage from "./component/preview_page/PreviewPage";
 import ContactPage from "./component/contact/ContactPage";
 import ServicePage from "./component/service_page/ServicePage";
-import PostsComponent from "./component/posts/PostsComponent";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import {ToastContainer} from "react-toastify";
-import TalkToChat from "./component/chatbot/TalkToChat";
+
 
 function App() {
     return (
@@ -26,7 +25,7 @@ function App() {
                     <Route path="/contact" element={<ContactPage/>}/>
                     <Route path="/service" element={<ServicePage/>}/>
                     <Route path="/products" element={<ProductsComponent/>}/>
-                    <Route path="/posts" element={<PostsComponent/>}/>
+
 
                 </Route>
                 <Route path="/preview" element={<PreviewPage/>}/>
