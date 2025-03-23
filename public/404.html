@@ -7,10 +7,14 @@
 </head>
 <body>
 <script>
-    var path = window.location.pathname;
-    if (path !== "/") {
-        window.location.replace("/#" + path);
+
+    const redirectTo = sessionStorage.getItem("redirect");
+    if (redirectTo) {
+        sessionStorage.removeItem("redirect");
+        window.location.replace(redirectTo);
     }
+</script>
+
 </script>
 </body>
 </html>

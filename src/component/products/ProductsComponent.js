@@ -11,10 +11,16 @@ const cards = [
     { id: 6,code: "MTK1006", title: "WEBSITE THỰC PHẨM", image: "https://daksystem.net/wp-content/uploads/2020/04/theme-wordpress-khoa-hoc-nhac-cu-300x557.jpg", link: "https://cmtin1807.github.io/template2", category: "Thương mại" },
     { id: 7,code: "MTK1007", title: "WEBSITE DƯỢC-Y TẾ", image: "https://adsmo.vn/wp-content/uploads/2020/04/mau-website-dnsk41-01.jpg", link: "#", category: "Y tế" },
     { id: 8,code: "MTK1008", title: "WEBSITE XÂY DỰNG", image: "https://southteam.vn/wp-content/uploads/2020/06/edile1-e1593146162161-686x1024.png", link: "#", category: "Xây dựng" },
-    { id: 9,code: "MTK1009", title: "QUÁN COFFEE", image: "https://www.ngoisaoso.vn/uploads/news/2014/11/26/11.jpg", link: "https://pham-van-man.github.io/template-caffee", category: "Ẩm thực" },
+
     { id: 10,code: "MTK1010", title: "ĐIỆN LẠNH", image: "https://www.ngoisaoso.vn/uploads/news/2014/11/26/11.jpg", link: "https://cmtin1807.github.io/Template3_MayLanh", category: "Kỹ thuật" },
-    { id: 11,code: "MTK1011", title: "NHÀ HÀNG 2", image: "https://mona-media.com/wp-content/uploads/2017/12/1a-2.png", link: "https://cmtin1807.github.io/Template4_NhaHang/", category: "Ẩm thực" },
-    { id: 12,code: "MTK1012", title: "NHÀ HÀNG 3", image: "https://mona-media.com/wp-content/uploads/2017/12/1a-2.png", link: "https://pham-van-man.github.io/template-restaurant-2/", category: "Ẩm thực" }
+    { id: 11,code: "MTK1011", title: "NHÀ HÀNG 2", image: "https://seovip.vn/wp-content/uploads/2021/08/thiet-ke-web-cho-nha-hang-Dine-600x993.png", link: "https://cmtin1807.github.io/Template4_NhaHang/", category: "Ẩm thực" },
+    { id: 12,code: "MTK1012", title: "NHÀ HÀNG 3", image: "https://seovip.vn/wp-content/uploads/2021/08/annam1-1.jpg", link: "https://pham-van-man.github.io/template-restaurant-2", category: "Ẩm thực" },
+    { id: 17,code: "MTK1017", title: "NHÀ HÀNG 4", image: "https://www.thietkewebdanang.com/wp-content/uploads/2016/07/nha-hang-nhat-ban.jpg", link: "https://pham-van-man.github.io/template-restaurant-3", category: "Ẩm thực" },
+    { id: 9,code: "MTK1009", title: "QUÁN COFFEE", image: "https://www.ngoisaoso.vn/uploads/news/2014/11/26/11.jpg", link: "https://pham-van-man.github.io/template-caffee", category: "Ẩm thực" },
+    { id: 13,code: "MTK1013", title: "QUÁN COFFEE 1", image: "https://seoviet.vn/wp-content/uploads/2020/01/hinh-anh-mau-website-quan-ca-phe-04.jpg", link: "https://cmtin1807.github.io/Template5_Coffee1", category: "Ẩm thực" },
+    { id: 14,code: "MTK1014", title: "QUÁN COFFEE 2", image: "https://chuyendoiso365.com/wp-content/uploads/2022/08/website-quan-cafe-8.png", link: "https://cmtin1807.github.io/Template6_Caffe2", category: "Ẩm thực" },
+    { id: 15,code: "MTK1015", title: "QUÁN COFFEE 3", image: "https://seoviet.vn/wp-content/uploads/2020/01/hinh-anh-mau-website-quan-ca-phe-05.jpg", link: "https://cmtin1807.github.io/Template8_Coffee4/index.html", category: "Ẩm thực" },
+    { id: 16,code: "MTK1016", title: "QUÁN COFFEE 4", image: "https://www.ngoisaoso.vn/uploads/news/2014/12/10/04.jpg", link: "https://cmtin1807.github.io/Template7_Coffee3/", category: "Ẩm thực" },
 ];
 
 // Nhóm các danh mục

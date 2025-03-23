@@ -1,4 +1,3 @@
-
 import './App.css';
 import {Route, Routes} from "react-router-dom";
 import Layout from "./component/layout/Layout";
@@ -11,25 +10,29 @@ import ServicePage from "./component/service_page/ServicePage";
 import PostsComponent from "./component/posts/PostsComponent";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
+import {ToastContainer} from "react-toastify";
+import TalkToChat from "./component/chatbot/TalkToChat";
 
 function App() {
-  return (
-    <div className="App">
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<HomePage />} />  {/* Trang chủ */}
+    return (
+        <div className="App">
+            <ToastContainer autoClose={1000}/>
+            {/*<TalkToChat/>*/}
+            <Routes>
+                <Route path="/" element={<Layout/>}>
+                    <Route index element={<HomePage/>}/> {/* Trang chủ */}
 
-          <Route path="/introduce" element={<IntroduceComponent />} />
-          <Route path="/contact" element={<ContactPage />} />
-          <Route path="/service" element={<ServicePage />} />
-          <Route path="/products" element={<ProductsComponent />} />
-          <Route path="/posts" element={<PostsComponent />} />
+                    <Route path="/introduce" element={<IntroduceComponent/>}/>
+                    <Route path="/contact" element={<ContactPage/>}/>
+                    <Route path="/service" element={<ServicePage/>}/>
+                    <Route path="/products" element={<ProductsComponent/>}/>
+                    <Route path="/posts" element={<PostsComponent/>}/>
 
-        </Route>
-          <Route path="/preview" element={<PreviewPage />} />
-      </Routes>
-    </div>
-  );
+                </Route>
+                <Route path="/preview" element={<PreviewPage/>}/>
+            </Routes>
+        </div>
+    );
 }
 
 export default App;
