@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './FooterComponent.module.css';
-import {FaFacebookF, FaTwitter, FaInstagram, FaMapMarkerAlt, FaPhoneAlt} from 'react-icons/fa';
+import {FaFacebookF, FaMapMarkerAlt, FaPhoneAlt} from 'react-icons/fa';
 import { SiZalo } from 'react-icons/si';
 
 function FooterComponent() {
